@@ -1,0 +1,6 @@
+// Removendo qualquer ocorrência de "q=" seguido por um valor desconhecido
+replaceAll(RegExp(r'q=[^&]*'), '');
+// Removendo duplicatas de "&"
+replaceAll(RegExp(r'&+'), '&');
+// Removendo "&" no início ou no final da string
+replaceAll(RegExp(r'^&|&$'), '');
