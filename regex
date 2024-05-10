@@ -1,6 +1,18 @@
-// Removendo qualquer ocorrência de "q=" seguido por um valor desconhecido
-replaceAll(RegExp(r'q=[^&]*'), '');
-// Removendo duplicatas de "&"
-replaceAll(RegExp(r'&+'), '&');
-// Removendo "&" no início ou no final da string
-replaceAll(RegExp(r'^&|&$'), '');
+replaceAll(RegExp(r'q=[^&]*'), ''); // Removendo qualquer ocorrência de "q=" seguido por um valor desconhecido
+replaceAll(RegExp(r'&+'), '&'); // Removendo duplicatas de "&"
+replaceAll(RegExp(r'^&|&$'), ''); // Removendo "&" no início ou no final da string
+
+email = r"^[a-zA-Z0-9.a-zA-Z0-9.!#$%&'*+-/=?^_`{|}~]+@[a-zA-Z0-9]+\.[a-zA-Z]+";
+dddCellPhoneBrazil = r'^\([1-9]{2}\)\ 9 \d{4}-\d{4}';
+space = r'\s\b|\b\s';
+truckCode = r'^[A-Z]{2}[1-9]{3}';
+letters = r'[A-Z-a-z]';
+lettersLow = r'[a-z]';
+truckCodeUpp = r'[A-Z]';
+digits = r'\d';
+caractereMask = r'[^\#^\d]';
+onlyDigits = r'[^\d]';
+multiplesSpaces = r'\s+\b|\b\s';
+cep = '[0-9]{5}-[0-9]{3}';
+specialCharacters = r'[!@#$%^&*(),.?":{}|<>]';
+hasDigits = r'[0-9]';
