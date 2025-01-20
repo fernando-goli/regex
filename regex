@@ -16,3 +16,4 @@ multiplesSpaces = r'\s+\b|\b\s';
 cep = '[0-9]{5}-[0-9]{3}';
 specialCharacters = r'[!@#$%^&*(),.?":{}|<>]';
 hasDigits = r'[0-9]';
+cpf_brazil = r'^\d{3}\.\d{3}\.\d{3}-\d{2}$'
